@@ -1,0 +1,83 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    font-family: var(--Fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: var(--Fonte2);
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-size: 10vh;
+}
+header > p{
+    padding-bottom: 30px;
+}
+header a,footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover,footer a:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--Fonte3);
+    font-size: 3.5vh;
+}
+section > p {
+    padding-bottom: 1em;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.250);
+}
+#img1{
+    background-image: url("../imagens/joaninhaemcimadaflor.png");
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#img2{
+    max-height: 700px;
+    background-image: url("../imagens/livro.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.250);
+    width: 400px;
+    text-shadow: 1px 1px 0px black;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 2.5vh;
+}
